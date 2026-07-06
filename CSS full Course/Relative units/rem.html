@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>how to define rem in CSS</title>
+  
+    <style>
+        *{
+            padding : 0;
+            margin : 0;
+            font-size : 20px
+        }
+
+        #first{
+            height : 300px;
+            width : 300px;
+            background-color : green;
+            font-size : 20px;
+        }
+
+        #second{
+            height : 50%;
+            width : 50%;
+            background-color :yellow;
+            /* rem bas ye karta hai ye root element ke sath define hota hai jaise yaha mera root body text hai man lo maine body text ka font siz 10p diya aur child yahi second ka font size 2rem dunga to root ka 2 guna ho jayega  */
+            font-size : 2rem;
+        }
+    </style>
+</head>
+<body>
+    body text
+
+    <div id="first">first div
+
+        <div id="second">second div 
+
+        </div>
+    </div>
+</body>
+</html>

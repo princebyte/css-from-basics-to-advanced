@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>how to define em in CSS</title>
+
+    <style>
+        #first{
+            height : 200px;
+            width : 150px;
+            background-color : yellow;
+            /* agar yaha ham sirf first ko font size denge to second par bhi apne aap apply ho jayega kyonki first second ka parent hai isliye dono par saman rup se apply hoga  */
+            font-size : 20px;
+        }
+
+        #second{
+            height : 50%;
+            width : 50%;
+            background-color : green;
+
+            /* lakin jab ham yaha child ka alag se font size de denge to parent ka font size badhane ya ghatane se child par yahi second par koi asar nahi padega  */
+            /* font-size : 30px; */
+
+            /* lakin jaise hi ham font size ko 2.5em kar enge to jaise hi first wale ke font size badhayenge to second yahi child ka bhi font size apne parent 2.5 guna badhta jayega  */
+
+            font-size : 2.5em;
+         
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="first">first div
+     
+        <div id="second">second div
+
+        </div>
+    </div>
+</body>
+</html>

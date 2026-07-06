@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display property</title>
+
+    <style>
+        *{
+            padding : 0;
+            margin : 0;
+        }
+        
+         .box{
+            height : 80px;
+            width : 80px;
+            margin : 7px;
+            border : 2px solid black;
+            border-radius : 10px;
+            display : inline-block;
+         }
+
+        #box1{
+            background-color : yellow;
+            display : none;
+            
+             
+
+        }
+
+        #box2{
+            background-color : green;
+            
+            /* inline element utna hi space leta hai jitna ki content hai jabki block element pura space occupie karta hai  */
+            /* display : block; */
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="box1" class="box">box1</div>
+    <div id="box2" class="box">box2</div>
+</body>
+</html>

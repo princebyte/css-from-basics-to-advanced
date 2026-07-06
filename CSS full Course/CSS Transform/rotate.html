@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Transform : Rotate</title>
+
+    <style>
+        *{
+            padding : 0;
+            margin : 0;
+        }
+
+        .box{
+            height : 100px;
+            width : 100px;
+            border : 2px solid black;
+            margin : 5px;
+            border-radius : 7px;
+            text-align : center;
+            position : relative;
+            top : 30px;
+            left : 30px;
+            transition : all, 1s, ease-in-out,  3s;
+            margin : 50px 0px 0px 0px;
+        
+       
+
+
+        }
+        #rotate45{background-color : green;}
+        #rotate45:hover{transform : rotate(45deg);}
+
+        #rotate90{background-color : red;}
+        #rotate90:hover{transform : rotate(90deg);}
+
+        #rotate180{background-color : green;}
+        #rotate180:hover{transform : rotate(180deg);}
+
+        #rotate360{background-color : red;}
+        #rotate360:hover{transform : rotate(360deg);}
+
+       
+
+
+    </style>
+</head>
+<body>
+    <div id="rotate45" class="box">Rotate</div>
+    <div id="rotate90" class="box">Rotate</div>
+    <div id="rotate180" class="box">Rotate</div>
+    <div id="rotate360" class="box">Rotate</div>
+    
+    
+</body>
+</html>

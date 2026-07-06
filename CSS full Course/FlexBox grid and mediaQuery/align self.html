@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex items : align self</title>
+
+    <style>
+        *{
+            padding : 0;
+            margin : 0;
+        }
+
+        .container{
+            height : 600px;
+            width : 600px;
+            border : 2px solid black;
+            margin : 5px;
+            display : flex;
+            /* ye box ko cross aix par center me karta hai  */
+            align-items : center;
+            /* ye box ko main axis me center par karta hai */
+            justify-content : center;
+        }
+
+        .box{
+            height : 80px;
+            width : 80px;
+            margin : 5px;
+            border : 2px solid black;
+        }
+
+        #box1{background-color : red;}
+        #box2{background-color : blue;}
+        #box3{background-color : yellow;}
+        #box4{
+            background-color : aqua;
+            /* ye jo ham align self laga rhe hai ye sirf ek item par lagta hai  */
+            align-self : end;
+        }
+        #box5{background-color : blueviolet;}
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div id="box1" class="box">block1</div>
+        <div id="box2" class="box">block2</div>
+        <div id="box3" class="box">block3</div>
+        <div id="box4" class="box">block4</div>
+        <div id="box5" class="box">block5</div>
+
+    </div>
+</body>
+</html>

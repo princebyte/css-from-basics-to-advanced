@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo Classes</title>
+
+    <style>
+        .btn{
+            
+            height : 20px;
+            width : 150px;
+            background-color : rgb(21, 156, 53);
+            border : 2px  solid black;
+            border-radius : 5px;
+
+            /* how to use transition property */
+            /* ab ham ye 4 line me transition function lagane ke jagah ek hi line me laga skta hoon */
+            /* transition-property : all;
+            transition-duration : 1s;
+            transition-delay : 0.5s;
+            transition-timing-function : ease-in-out; */
+
+            transition : all , 1s, .4s ease-in-out;
+            
+        }
+
+        .btn:hover{
+            
+            height : 23px;
+            width : 160px;
+            background-color : rgb(111, 174, 221);
+            border : 2px solid red;
+        }
+
+        .btn:active{
+            height : 23px;
+            width : 160px;
+            background-color : blueviolet;
+        }
+    </style>
+</head>
+<body>
+    
+        <button class="btn">Learning Pseudo</button>
+    
+</body>
+</html>

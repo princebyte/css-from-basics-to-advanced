@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border property in css</title>
+    <style>
+      
+      .first_block{
+        height : 80px;
+        width : 80px;
+        margin : 5px;
+        padding : 5px;
+        
+        
+      }
+
+      #first{
+        background-color : red;
+        border : 2px solid blue;
+        border-radius : 5px 10px 20px 19px;
+        
+        /* ham agar alag se ye property laga diye to box chhota hoga lakin jo height and width hamne define ki hai wo to rhega hi */
+        box-sizing : border-box;
+      }
+
+      #second{
+        background-color : yellow;
+        border : 4px dashed black;
+        border-radius : 10px;
+
+        /* ye by default rhta hai  */
+        box-sizing : content-box;
+      }
+    </style>
+</head>
+<body>
+    <div id="first" class="first_block">first block</div>
+    <div id="second" class="first_block">second block</div>
+</body>
+</html>

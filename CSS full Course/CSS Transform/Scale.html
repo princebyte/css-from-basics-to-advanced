@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Transform : Scale</title>
+
+    <style>
+        *{
+            padding : 0;
+            margin : 0;
+        }
+
+        .box{
+            height : 100px;
+            width : 100px;
+            border : 2px solid black;
+            margin : 5px;
+            border-radius : 7px;
+            text-align : center;
+            position : relative;
+            top : 30px;
+            left : 30px;
+            transition : all, 1s, ease-in-out,  3s;
+            margin : 50px 0px 0px 0px;
+        
+       
+
+
+        }
+        #scale2{background-color : green;}
+        #scale2:hover{transform : scale(2);}
+
+        #scale4{background-color : red;}
+        #scale4:hover{transform : scale(4);}
+
+        #scalex{background-color : green;}
+        #scalex:hover{transform : scalex(2);}
+
+        #scaley{background-color : red;}
+        #scaley:hover{transform : scaley(4);}
+
+       
+
+
+    </style>
+</head>
+<body>
+    <div id="scale2" class="box">Scale2</div>
+    <div id="scale4" class="box">Scale4</div>
+    <div id="scalex" class="box">Scalex</div>
+    <div id="scaley" class="box">Scaley</div>
+    
+    
+</body>
+</html>

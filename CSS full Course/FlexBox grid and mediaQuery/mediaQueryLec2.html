@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mediaQuery:width</title>
+    <style>
+
+        
+        .box{
+            padding : 5px;
+            height : 100px;
+            width : 100px;
+            background-color : green;
+           }
+
+        /* yaha min and max width jabtak 250 se 300 ke bich me rahega to ek circle ban jayega aur jaise hi screen size 300px se jyada hoga ye waps apne shape me aa jayega  */
+        @media screen and (min-width : 250px) and (max-width : 300px){
+            .box{
+                
+                border-radius : 50%;
+                background-color : red;
+                text-align : center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">MainBOx</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            padding : 0; 
+            margin : 0;
+        }
+
+        .box{
+            margin : 0px
+        }
+
+        #first{
+            background-color : green;
+            height : 100px;
+            width : 150px;
+        }
+
+        #second{
+            background-color : yellow;
+            /* yaha jaise hi hamne second ke width ko percentage me 50% diya ye apne parent ke half ho gaya  */
+            width : 50%;
+            height : 50%;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- yaha second, first ka child hai  -->
+    <div id="first" class="box">first
+
+        <div id="second" class="box">second</div>
+
+    </div>
+</body>
+</html>

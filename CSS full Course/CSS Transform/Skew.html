@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Transform : Scale</title>
+
+    <style>
+        *{
+            padding : 0;
+            margin : 0;
+        }
+
+        .box{
+            height : 100px;
+            width : 100px;
+            border : 2px solid black;
+            margin : 5px;
+            border-radius : 7px;
+            text-align : center;
+            position : relative;
+            top : 30px;
+            left : 30px;
+            transition : all, 1s, ease-in-out,  3s;
+            margin : 50px 0px 0px 0px;
+        
+       
+
+
+        }
+        #skew45{background-color : green;}
+        #skew45:hover{transform : skew(45deg);}
+
+        #skew90{background-color : red;}
+        #skew90:hover{transform : skew(90deg);}
+
+        #skew180{background-color : green;}
+        #skew180:hover{transform : skew(180deg);}
+
+        #skew360{background-color : red;}
+        #skew360:hover{transform : skew(360deg);}
+
+       
+
+
+    </style>
+</head>
+<body>
+    <div id="skew45" class="box">Skew45</div>
+    <div id="skew90" class="box">Skew90</div>
+    <div id="skew180" class="box">Skew180</div>
+    <div id="skew360" class="box">Skew360</div>
+    
+    
+</body>
+</html>
